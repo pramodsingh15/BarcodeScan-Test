@@ -1,4 +1,5 @@
 import 'package:barcode_scan/barcode_scan.dart';
+import 'package:barcodescantest/utility.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -56,7 +57,7 @@ class _BarcodeClassState extends State<BarcodeClass> {
       } 
     } on PlatformException catch (e) {
       if (e.code == BarcodeScanner.CameraAccessDenied) {
-        // Utility.showToastMsg("Camera permission not granted");
+        Utility.showToastMsg("Camera permission not granted");
       } else {
         // Utility.showToastMsg("Unknown error: $e");
       }
