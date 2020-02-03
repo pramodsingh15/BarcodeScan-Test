@@ -4,4 +4,5 @@ class AppStrings {
   static const String LABEL_USER_BACK_BTN =
       'null (user returned using the "back-button" before scanning)';
   static const String LABEL_ERROR_BARCODE = "Please scan Barcode";
+  static const String IMAGE_BARCODE = "images/barcode.png";
 }
